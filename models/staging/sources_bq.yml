@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: Raw taxi trip data from NYC repo in BigQuery
+    database: silje-no-org-zoomcamp #BQ project id
+    schema: nytaxi #BQ dataset name with raw data
+    tables:
+      - name: yellow_tripdata_non_partitioned
+      - name: green_tripdata_non_partitioned
+      - name: fhv_tripdata_2019_non_partitione
